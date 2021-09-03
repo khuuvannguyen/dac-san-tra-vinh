@@ -1,0 +1,125 @@
+div.thong-tin {
+    background-color: rgba(230, 230, 230, 0.459);
+}
+
+div.sanpham-detail {
+    margin: 5px;
+    width: 100%;
+}
+
+div.sanpham-detail p.ten-san-pham {
+    color: rgb(190, 0, 165);
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+div.hinh-sanpham {
+    height: 320px;
+    width: 480px;
+}
+
+div.hinh-sanpham img.hinh {
+    height: auto;
+    width: auto;
+}
+
+div.thong-tin-co-ban {
+    margin-left: 1em;
+    /* border: 1px solid rgba(0, 0, 0, 0.384); */
+    /* border-radius: 10px; */
+}
+
+table {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+thong-tin-co-ban .tag {
+    text-align: right;
+}
+
+table tr td.column {
+    text-align: right;
+}
+
+div.mo-ta p.mo-ta-title {
+    color: #000;
+    font-weight: bold;
+}
+
+label.btn {
+    background-color: #fff;
+    border: 1px solid orange;
+    font-weight: bold;
+}
+
+label.btn:hover {
+    background-color: orange;
+    border: 1px solid orange;
+}
+
+input[type="radio"]:checked+label.btn {
+    background-color: orange;
+    border: 1px solid orange;
+    box-shadow: none;
+}
+
+.add-to-cart {
+    display: block;
+    overflow: hidden;
+    padding: 7px 0;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background: #09a4a4;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#09a4a4), to(#077E7E));
+    background: -webkit-linear-gradient(top, #077E7E, #09a4a4);
+    background: -moz-linear-gradient(top, #077E7E, #09a4a4);
+    background: -ms-linear-gradient(top, #077E7E, #09a4a4);
+    background: -o-linear-gradient(top, #077E7E, #09a4a4);
+}
+
+.add-to-cart:hover {
+    box-shadow: 0 0.0625rem 20px 0 rgba(0, 0, 0, .05);
+    -webkit-transform: translateY(-.0625rem);
+    transform: translateY(-.0625rem);
+    z-index: 1;
+    z-index: 2;
+    overflow: visible;
+    color: #fff;
+}
+
+.buy-now {
+    display: block;
+    overflow: hidden;
+    padding: 7px 0;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background: #fd6e1d;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fd6e1d), to(#f59000));
+    background: -webkit-linear-gradient(top, #f59000, #fd6e1d);
+    background: -moz-linear-gradient(top, #f59000, #fd6e1d);
+    background: -ms-linear-gradient(top, #f59000, #fd6e1d);
+    background: -o-linear-gradient(top, #f59000, #fd6e1d);
+}
+
+.buy-now:hover {
+    box-shadow: 0 0.0625rem 20px 0 rgba(0, 0, 0, .05);
+    -webkit-transform: translateY(-.0625rem);
+    transform: translateY(-.0625rem);
+    z-index: 1;
+    z-index: 2;
+    overflow: visible;
+}

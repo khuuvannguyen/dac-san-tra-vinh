@@ -1,0 +1,90 @@
+div.sanpham-ngaunhien {
+    /* margin-left: ; */
+    width: 40%;
+}
+
+div.namee {
+    color: rgb(233, 105, 0);
+}
+
+div.sanpham-ngaunhien p.ngaunhien-title{
+    color: #000;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+div.block {
+    display: block;
+    width: 18%;
+    height: auto;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding: .5rem;
+    background-color: transparent;
+    vertical-align: middle;
+    overflow: visible;
+    border-radius: 1rem;
+    transition: scale(1);
+    text-decoration: none;
+    position: relative;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+div.block:hover {
+    transform: scale(1.1);
+}
+
+div.imgg {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    /*bottom: 0;*/
+    vertical-align: middle;
+}
+
+div.imgg div.imggs {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    padding-top: .5rem;
+    vertical-align: middle;
+    position: relative;
+}
+
+div.namee {
+    text-decoration: none;
+    background-color: transparent;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 18px;
+    margin-bottom: 15%;
+    text-align: center;
+}
+
+.price {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    overflow: hidden;
+    color: red;
+    font-weight: bold;
+    text-align: right;
+    font-size: 16px;
+}

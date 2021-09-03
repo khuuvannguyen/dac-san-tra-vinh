@@ -1,0 +1,66 @@
+p.ten-loai {
+    color: rgb(190, 0, 165);
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+div.block_ {
+    display: block;
+    width: 18%;
+    height: auto;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: 2.5em;
+    padding: .5rem;
+    background-color: transparent;
+    vertical-align: middle;
+    overflow: visible;
+    border-radius: 1rem;
+    transition: scale(1);
+    text-decoration: none;
+    position: relative;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+div.block_:hover {
+    border: 1px solid orange;
+}
+
+div.img_ {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    /*bottom: 0;*/
+    vertical-align: middle;
+}
+
+div.img_ img.imgg_ {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    vertical-align: middle;
+    position: relative;
+}
+
+div.name_ {
+    padding-top: .5em;
+    color: rgb(233, 105, 0);
+    background-color: transparent;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 18px;
+    text-align: center;
+}

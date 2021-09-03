@@ -1,0 +1,114 @@
+
+#main {
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    background-color: rgba(230, 230, 230, 0.459);
+}
+
+.up-top {
+    background-color: rgba(176, 241, 230, 0.411);
+}
+
+#nav-bar {}
+
+#banner {}
+
+#san-pham {
+    height: 100%;
+    padding-left: 0;
+    display: block;
+    position: relative;
+}
+
+#ten-danh-sach {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+#danh-sach {
+    list-style-type: none;
+    padding-left: 0;
+    display: block;
+    position: relative;
+}
+
+ul#danh-sach li {
+    list-style: none;
+    padding: 10px 0 5px 75px;
+    min-height: 80px;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    line-height: 1.33;
+    border-top: 1px solid gray;
+}
+
+ul#danh-sach>li {
+    list-style: none;
+    margin-bottom: .3em;
+    text-align: left;
+    margin: 0;
+}
+
+ul#danh-sach li img {
+    top: 10px;
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+ul#danh-sach li a:not(.remove) {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+span#gia-tien {
+    white-space: nowrap;
+    font-weight: bold;
+    color: rgb(196, 89, 1);
+}
+
+del span#gia-tien {
+    opacity: .6;
+    font-weight: normal;
+    margin-right: .3em;
+}
+
+ins {
+    text-decoration: none;
+}
+
+.san-pham-xem-them:hover{
+    color:rgb(196, 89, 1);
+    font-weight: bold;
+}
+
+.gioi-thieu{
+    font-size: 16px;
+    text-align: justify;
+}

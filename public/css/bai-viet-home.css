@@ -1,0 +1,49 @@
+.block-bai-viet {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.bai-viet {
+    text-decoration: none;
+}
+
+.bai-viet:hover {
+    text-decoration: none;
+}
+
+.ten-bai-viet {
+    color: #000;
+    font-weight: bold;
+    padding-top: .5rem;
+    padding-left: 2rem;
+}
+
+.ten-bai-viet:hover {
+    color: rgb(79, 101, 223);
+}
+
+.noi-dung {
+    padding-left: 2rem;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:  -webkit-box;
+    /* number of lines to show */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.xem-them {
+    color: #000;
+    padding-bottom: .5rem;
+    padding-top: 0;
+    padding-right: 0;
+}
+
+.xem-them:hover {
+    color: blue;
+    text-decoration: underline;
+}

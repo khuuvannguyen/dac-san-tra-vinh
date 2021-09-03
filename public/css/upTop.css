@@ -1,0 +1,76 @@
+div#logo {
+    width: 20%;
+}
+
+img#logo_ {
+    height: 100%;
+    width: 100%;
+}
+
+div#search {
+    padding-top: 1rem;
+}
+
+button#btnSearch {
+    background-color: rgba(255, 75, 20, 0.89);
+    border: none;
+}
+
+button#btnSearch:hover {
+    background-color: rgb(79, 101, 223);
+}
+
+span#search-icon {
+    color: rgb(255, 255, 255);
+}
+
+input#search-bar {
+    width: 200px;
+}
+
+div#working-time {
+    padding-top: 1.5rem;
+}
+
+div#phone {
+    padding-top: 1.5rem;
+}
+
+div#cart {
+    padding-top: 1.5rem;
+    text-decoration: none;
+}
+
+div#login {
+    padding-top: 1.5rem;
+    right: 0;
+}
+
+.up-top-font {
+    color: rgb(233, 105, 0);
+    font-weight: bold;
+}
+
+.up-top-font:hover {
+    text-decoration: none;
+    color: rgb(79, 101, 223);
+}
+
+ul.danh-sach-loai-san-pham {
+    list-style-type: none;
+}
+
+ul.danh-sach-loai-san-pham li {
+    display: block;
+    position: relative;
+}
+
+li.loai-san-pham {
+    display: block;
+    position: absolute;
+}
+
+nav.nav-bar{
+    border: 1px solid rgba(128, 128, 128, 0.205);
+    border-radius: 100px;
+}

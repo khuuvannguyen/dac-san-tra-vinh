@@ -1,0 +1,61 @@
+.main {
+    background-color: #BFD1E5;
+    padding-bottom: 5em;
+    padding-top: 1em;
+}
+
+.dashboard {
+    height: 100%;
+}
+
+.fa-home {
+    font-size: 100px;
+    margin-left: 50%;
+}
+
+.web-icon {
+    font-size: 100px;
+    margin-left: 25%;
+}
+
+.fa-sign-out {
+    font-size: 50px;
+}
+
+.btn-sign-out {
+    margin-left: 50%;
+    padding-top: 10%;
+}
+
+.vnpay-image {
+    /* height: 100%;
+    width: 100%; */
+    padding: 7.5%;
+    padding-left: 50%;
+}
+
+.btn-sign-out:hover {
+    color: red;
+}
+
+.header {
+    height: 100%;
+    width: 100%;
+}
+
+.vnpay-link {
+    top: 0;
+    left: 0;
+}
+
+.left-menu {
+    text-align: center;
+}
+
+.active-orange {
+    background-color: orange;
+}
+
+.active a {
+    color: #fff;
+}

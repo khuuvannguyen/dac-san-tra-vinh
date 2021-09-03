@@ -1,0 +1,66 @@
+*{
+    list-style: none;
+}
+
+.social-icon{
+    padding-top: 1.5em;
+}
+
+.social-icon ul li{
+    float: left;
+    margin-left: .5em;
+}
+
+.social-icon ul li a{
+    background-color: #d74b33;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    text-align: center;
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+}
+
+div.container-footer{
+    padding-left: 8%;
+}
+
+.block-footer{
+    text-align: left;
+    color: #fff;
+    padding-left: 5em;
+    width: 100%;
+}
+
+.title-footer{
+    text-transform: uppercase;
+    padding-top: .5em;
+    font-weight: bold;
+}
+
+ul.danh-sach-footer{
+    list-style: none;
+}
+
+ul.danh-sach-footer li a{
+    color: #fff;
+}
+
+.block-copy-right{
+    background-color: rgb(235, 69, 69);
+    text-align: center;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+a.copy-right{
+    text-decoration: none;
+    color: #000;
+}
+
+a.copy-right:hover{
+    color: #000;
+}

@@ -1,0 +1,93 @@
+div.sanpham-left {
+    margin: 5px;
+}
+
+div.sanpham-left div.giao-hang {
+    background-color: rgb(35, 39, 235);
+}
+
+div.sanpham-left div.giao-hang p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.animate-me {
+    -webkit-animation: bgcolorchange 4s infinite;
+    /* Chrome, Safari, Opera */
+    animation: 4s infinite bgcolorchange;
+}
+
+@keyframes bgcolorchange {
+    0% {
+        background-color: rgb(27, 0, 126);
+    }
+    25% {
+        background-color: green;
+    }
+    50% {
+        background-color: rgb(173, 0, 95);
+    }
+    75% {
+        background-color: rgb(173, 0, 95);
+    }
+    100% {
+        background-color: rgb(27, 0, 126);
+    }
+}
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes bgcolorchange {
+    0% {
+        background: red;
+    }
+    25% {
+        background: rgb(173, 0, 95);
+    }
+    75% {
+        background: green;
+    }
+    100% {
+        background: rgb(27, 0, 126);
+    }
+}
+
+.shk {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    animation-name: shakeMe;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes shakeMe {
+    2%, 18% {
+        transform: translate3d(-5px, 0, 0);
+    }
+    4%, 16% {
+        transform: translate3d(5px, 0, 0);
+    }
+    6%, 10%, 14% {
+        transform: translate3d(-5px, 0, 0);
+    }
+    8%, 12% {
+        transform: translate3d(5px, 0, 0);
+    }
+    18.1% {
+        transform: translate3d(0px, 0, 0);
+    }
+}
+
+p.tu-van-title {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+
+p.tu-van-noi-dung {
+    color: #000;
+    text-align: center;
+}
