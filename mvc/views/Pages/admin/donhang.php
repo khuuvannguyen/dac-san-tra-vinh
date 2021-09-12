@@ -88,7 +88,7 @@ $hoadon = json_decode($data["HoaDon"], true);
 														if (!isset($data["Start"]) || $data["Start"] == "") {
 															echo "disabled";
 														}
-														?>" target="_blank">Các sản phẩm đã bán</a>
+														?>" target="_blank">Thống kê</a>
 					</h4>
 				</div>
 			</div>
