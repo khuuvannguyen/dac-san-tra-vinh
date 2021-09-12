@@ -17,7 +17,7 @@
     $trongluong = json_decode($data["TrongLuong"], true);
     ?>
     <style>
-        table{
+        table {
             height: 100%;
             width: 100%;
             background-color: rgba(255, 0, 0, 0.178);
@@ -46,16 +46,25 @@
             </td>
         </tr>
         <tr>
-            <td colspan="4">
-                Họ và tên khách hàng: <?= $hoadon[0]["TENKHACHHANG"] ?>
+            <td colspan="2">
+                Khách hàng:
             </td>
             <td colspan="3">
-                Số điện thoại: <?= $hoadon[0]["SODIENTHOAI"] ?>
+                <?= $hoadon[0]["TENKHACHHANG"] ?>
+            </td>
+            <td>
+                Số điện thoại:
+            </td>
+            <td>
+                <?= $hoadon[0]["SODIENTHOAI"] ?>
             </td>
         </tr>
         <tr>
-            <td colspan="7">
-                Địa chỉ: <?= $hoadon[0]["DIACHI"] ?>
+            <td colspan="2">
+                Địa chỉ:
+            </td>
+            <td colspan="5">
+                <?= $hoadon[0]["DIACHI"] ?>
             </td>
         </tr>
         <tr>
@@ -132,8 +141,8 @@
             console.log(invoice);
             console.log(window);
             var opt = {
-                margin: 1,
-                filename: "<?php echo $hoadon[0]["MAHOADON"] ?>" + '.pdf',
+                margin: 0.1,
+                filename: "hoa don ban hang: <?= $hoadon[0]["MAHOADON"] ?>" + '.pdf',
                 image: {
                     type: 'jpeg',
                     quality: 0.98
