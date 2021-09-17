@@ -1,6 +1,55 @@
 <?php
 class Rest extends DB
 {
+    function backup()
+    {
+        $tables = array();
+        $result = mysqli_query($this->con, "SHOW TABLES");
+
+        while ($row = mysqli_fetch_row($result)) {
+            $tables[] = $row[0];
+        }
+        $sqlScript = "";
+        foreach ($tables as $table) {
+
+            // Prepare SQLscript for creating table structure
+            $query = "SHOW CREATE TABLE $table";
+            $result = mysqli_query($this->con, $query);
+            $row = mysqli_fetch_row($result);
+
+            $sqlScript .= "\n\n" . $row[1] . ";\n\n";
+
+
+            $query = "SELECT * FROM $table";
+            $result = mysqli_query($this->con, $query);
+
+            $columnCount = mysqli_num_fields($result);
+
+            // Prepare SQLscript for dumping data for each table
+            for ($i = 0; $i < $columnCount; $i++) {
+                while ($row = mysqli_fetch_row($result)) {
+                    $sqlScript .= "INSERT INTO $table VALUES(";
+                    for ($j = 0; $j < $columnCount; $j++) {
+                        $row[$j] = $row[$j];
+
+                        if (isset($row[$j])) {
+                            $sqlScript .= '"' . $row[$j] . '"';
+                        } else {
+                            $sqlScript .= '""';
+                        }
+                        if ($j < ($columnCount - 1)) {
+                            $sqlScript .= ',';
+                        }
+                    }
+                    $sqlScript .= ");\n";
+                }
+            }
+
+            $sqlScript .= "\n";
+        }
+        return $sqlScript;
+    }
+
     function query($query)
     {
         $qr = $query;
