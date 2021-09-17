@@ -1,4 +1,5 @@
 <script src="./public/admin/js/left-menu.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <?php
 $url = "?page=a&action=";
 ?>
@@ -32,7 +33,7 @@ $url = "?page=a&action=";
         <a href="<?= $url ?>allTrongLuong" class="list-item-tag">Tất cả trọng lượng</a>
     </li>
     <li class="list-group-item list-container" name="list-item">
-        <a href="<?= $url?>addTrongLuong" class="list-item-tag">Thêm trọng lượng</a>
+        <a href="<?= $url ?>addTrongLuong" class="list-item-tag">Thêm trọng lượng</a>
     </li>
 </ul>
 <ul class="list-group mt-3">
@@ -49,7 +50,7 @@ $url = "?page=a&action=";
     <li class="list-group-item list-container" name="list-item">
         <a href="<?= $url ?>addBaiviet" class="list-item-tag">Thêm bài viết mới</a>
     </li>
-    
+
 </ul>
 <ul class="list-group mt-3">
     <li class="list-group-item active-orange">Nâng cao</li>
@@ -59,4 +60,19 @@ $url = "?page=a&action=";
     <li class="list-group-item list-container" name="list-item">
         <a href="<?= $url ?>query" class="list-item-tag">Truy vấn</a>
     </li>
+    <li class="list-group-item list-container" name="list-item">
+        <a href="javascript:void(0)" class="list-item-tag">Sao lưu</a>
+    </li>
 </ul>
+
+<script>
+    $("a[href='javascript:void(0)']").click(function() {
+        $.ajax({
+            type: "post",
+            url: "?page=a&action=backup",
+            success: function() {
+                window.location = "?page=a&action=backup"
+            }
+        });
+    });
+</script>
