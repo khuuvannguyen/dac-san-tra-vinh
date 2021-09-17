@@ -44,7 +44,7 @@
         } else {
             $.ajax({
                 type: "post",
-                url: "http://localhost/php_mvc/index.php?page=a&action=doimatkhau",
+                url: "?page=a&action=doimatkhau",
                 data: {
                     submit: $(this).attr("name"),
                     hientai: document.getElementById("hientai").value,
