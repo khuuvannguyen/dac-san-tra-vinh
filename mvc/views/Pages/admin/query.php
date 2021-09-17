@@ -54,7 +54,7 @@
             var value = document.getElementById("query").value;
             $.ajax({
                 type: "post",
-                url: "http://localhost/php_mvc/index.php?page=a&action=query",
+                url: "?page=a&action=query",
                 // dataType: "html",
                 data: {
                     query: value,
